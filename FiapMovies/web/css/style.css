@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap');
+:root {
+    --bg: #212121;
+    --bg2: #444444;
+    --primary: #FF0066;
+    --base-color: #FFF;
+}
+
+
+/* css reset */
+
+* {
+    margin: 0;
+    color: var(--base-color);
+}
+
+body {
+    background-color: var(--bg);
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    padding: 1.5rem;
+    background-color: var(--bg2);
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4rem;
+    color: var(--primary);
+}
+
+nav {
+    display: flex;
+    flex: 1;
+}
+
+nav ul {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-self: center;
+}
+
+nav a:hover {
+    color: var(--primary);
+    border-bottom: var(--primary) 3px solid;
+    padding-bottom: 1rem;
+}
+
+a {
+    color: var(--base-color);
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    flex: 1;
+}
+
+nav li:nth-child(3) {
+    flex: 2;
+    text-align: end;
+}
+
+#hero {
+    height: 320px;
+    position: relative;
+}
+
+#hero p {
+    width: 40%;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 56px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    padding: 6rem;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(../images/poster_guerra.jpg);
+    box-shadow: inset 0px -25px 25px #212121;
+    z-index: -100;
+    background-position: center;
+    background-position-y: 30%;
+    filter: opacity(.4);
+}
+#viuva {
+    display: flex;
+    
+    
+    height: 370px;
+    position: relative;
+}
+
+#viuva h3 {
+    width: 40%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 56px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    padding: 1.3rem;
+}
+#viuva p {
+    width: 80%;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    padding-left: 1.3rem;
+    
+}
+
+#viuva::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(../images/poster_viuva.jpg);
+    box-shadow: inset 5px -74px 64px 19px #212121;
+    z-index: -100;
+    background-position: center;
+    background-position-y: 20%;
+    filter: opacity(.4);
+}
+
+main {
+    margin-left: 3rem;
+}
+
+#detalhes-viuva{
+    display: flex;
+    height: 370px;
+    position: relative;
+    
+
+}
+
+main h2 {
+    font-size: 1.5rem;
+    border-left: var(--primary) 5px solid;
+    line-height: 20px;
+    padding-left: .2rem;
+    margin: 1rem 0;
+}
+
+.info {
+    display: flex;
+    
+    flex-direction: column;
+    
+    
+}
+
+.elenco {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.lista-atores{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.atores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem .5rem;
+    height: 300px;
+    width: 248px;
+
+    
+
+
+    z-index: -100;
+
+    background: #444444;
+    
+    border-radius: 15px;
+
+    
+}
+
+.atores h4{
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+
+margin-bottom: 10px;
+
+color: #FFFFFF;
+
+}
+
+.atores p{
+
+    font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+
+margin-bottom: 10px;
+
+color: #777777;
+
+
+}
+
+.botoes{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.ficha{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    width: 350px;
+    height: 500px;
+
+
+    
+
+    background: #444444;
+    border-radius: 20px;
+}
+
+.ficha h2{
+    margin-left: 15px;
+
+}
+
+.ficha p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+
+
+    margin-left: 15px;
+    margin-bottom: 10px;
+
+color: #777777;
+}
+.ficha h4 {
+    font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+text-align: left;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 15px;
+
+color: #FFFFFF;
+
+}
+
+.ator {
+    
+    height: 11rem;
+    width: 11rem;
+
+    
+    position: relative;
+    
+    top: -50px;
+
+    border-radius: 300.5px;
+    transform: rotate(-0.31deg);
+
+    
+}
+
+.lista-de-filmes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+
+.filme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: .5rem;
+}
+
+.filme * {
+    margin-bottom: .5rem;
+}
+
+.poster {
+    height: 280px;
+    border-radius: 5px;
+}
+
+.poster-detalhes {
+    
+    height: 280px;
+    margin: 15px;
+    margin-left: 3rem;
+    border-radius: 15px;
+    
+    
+}
+
+.filme .titulo {
+    font-size: 1.75rem;
+}
+
+.nota {
+    display: flex;
+    align-items: center;
+}
+
+.nota span {
+    color: gold;
+    margin-right: .3rem;
+}
+
+.nota p {
+    filter: opacity(.5);
+}
+
+.botao {
+    width: 100%;
+    background-color: var(--primary);
+    border-radius: .5rem;
+    padding: .8rem 0;
+    text-align: center;
+    transition: box-shadow all 1s ease-in-out;
+}
+
+.botao:hover {
+    box-shadow: 0px 0px 10px var(--primary);
+}
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    height: 370px;
+    position: relative;
+}
+
+#sobre h3 {
+    width: 90%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 56px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    padding: 1.3rem;
+    text-align: center;
+
+
+}
+#sobre p {
+    width: 90%;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    padding-left: 1.3rem;
+    text-align: center;
+    
+}
+
+
+
+
+
+
+
+
+
+.integrantes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem .5rem;
+    height: 276px;
+    width: 248px;
+
+
+
+
+    z-index: -100;
+
+    background: #444444;
+
+    border-radius: 15px;
+
+
+}
+
+.integrantes h4{
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+
+margin-bottom: 10px;
+
+color: #FFFFFF;
+
+}
+
+.integrantes p{
+
+    font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+
+margin-bottom: 10px;
+
+color: #777777;
+
+}
+
+.lista-integrantes{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.integrante {
+
+    height: 11rem;
+    width: 11rem;
+
+
+    position: relative;
+
+    top: -50px;
+
+    border-radius: 300.5px;
+    transform: rotate(-0.31deg);
+
+
+}
+
+
+@media (max-width:768px) {
+    header {
+        flex-direction: column;
+    }
+    #hero p {
+        padding: 3rem;
+    }
+}
+
+@media (max-width:425px) {
+    nav li:nth-child(3) {
+        flex: 1;
+        text-align: start;
+    }
+}
